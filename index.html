@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement Information System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="c:\Users\user\Downloads\brooke-cagle--uHVRvDr7pg-unsplash.jpg">
+      <h1>Placement Information System</h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#student-form">Register</a>
+      <a href="#companies">Companies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to the Placement Information System</h2>
+      <p>Connecting students with dream companies for a brighter career.</p>
+      <button onclick="scrollToRegister()">Get Started</button>
+    </div>
+    <img src="images/hero.jpg" alt="Students">
+  </section>
+
+  <!-- STUDENT REGISTRATION -->
+  <section id="student-form">
+    <h2>Student Registration</h2>
+    <form id="registerForm">
+      <label>Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Roll No:</label>
+      <input type="text" id="rollno" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Department:</label>
+      <input type="text" id="dept" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- COMPANIES SECTION -->
+  <section id="companies">
+    <h2>Top Recruiting Companies</h2>
+    <div class="company-list">
+      <img src="images/company1.png" alt="Microsoft">
+      <img src="images/company2.png" alt="Amazon">
+      <img src="images/company3.png" alt="Google">
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><b>Email:</b> placementcell@uem.edu</p>
+      <p><b>Phone:</b> +91 98765 43210</p>
+      <p><b>Address:</b> Training & Placement Cell,  University of engineering and management , India</p>
+    </div>
+  </section>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h3>🎉 Registration Successful!</h3>
+      <p>Your details have been recorded.</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Placement Information System | Designed by Pratistha</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
